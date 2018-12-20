@@ -1,0 +1,59 @@
+<!--
+Name: Fanyou Meng
+Email: Fanyou_Meng@student.uml.edu
+
+91.61 GUI Programming I
+Assignment 9:  Implementing a Bit of Scrabble with Drag-and-Drop
+Fanyou Meng, UMass Lowell Computer Science, Fanyou_Meng@student.uml.edu
+Copyright (c) 2018 by Fanyou Meng.  All rights reserved.  May be
+freely copied or excerpted for educational purposes with credit to the author.
+               updated by F.M. on December 19, 2018
+Description: Playing the scrabble game within a web in the GUI Programming I
+-->
+<html>
+    <head>
+        <title>HW9</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/as9.css">
+        <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+        <script src ="js/as9.js"></script>
+    </head>
+
+    <body>
+      <div id="scoreBoard">
+        <div>
+          <div class="label">Score:</div>
+          <div id="scoreHere">0</div>
+        </div>
+      </div>
+
+      <div id="scrabbleLine" style="text-align: center">
+        <table>
+          <tr><!--Table to place the line images-->
+            <td><img id="1" class="lineTile" title="blank" src="img/Scrabble_BlankSquare_81x87.jpg"></td>
+            <td><img id="2" class="lineTile" title="doubleWord" src="img/Scrabble_DoubleWordScore_81x87.jpg"></td>
+            <td><img id="3" class="lineTile" title="blank" src="img/Scrabble_BlankSquare_81x87.jpg"></td>
+            <td><img id="4" class="lineTile" title="blank" src="img/Scrabble_BlankSquare_81x87.jpg"></td>
+            <td><img id="5" class="lineTile" title="doubleWord" src="img/Scrabble_DoubleWordScore_81x87.jpg"></td>
+            <td><img id="6" class="lineTile" title="blank" src="img/Scrabble_BlankSquare_81x87.jpg"></td>
+            <td><img id="7" class="lineTile" title="blank" src="img/Scrabble_BlankSquare_81x87.jpg"></td>
+          </tr>
+        </table>
+      </div>
+
+      <div id="rackDiv" style="text-align: center">
+          <div id="theRack" style="text-align: center"></div>
+      </div>
+
+      <div>
+        <div id="tileButtonDiv" style="text-align: center">
+            <button onclick="makeRack()" id="newTileButton">Refresh</button>
+        </div>
+      </div>
+
+    </body>
+</html>
